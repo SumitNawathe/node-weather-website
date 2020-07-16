@@ -11,7 +11,7 @@ const forecast = function (latitude, longitude, callback) {
         } else {
             callback(undefined, 'The weather is ' + data.current.weather_descriptions[0] + 
                     '. It is currently ' + data.current.temperature + 
-                    'F. It feels like ' + data.current.feelslike + 'F');
+                    'F. It feels like ' + data.current.feelslike + 'F. The humidity is ' +  data.current.humidity + ".");
         }
     })
 };
